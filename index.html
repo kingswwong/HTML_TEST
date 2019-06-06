@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>语义化HTML基础</title>
+</head>
+<body>
+<form action="/judge" method="post">
+    <div id="header">
+        <h1>统一建模语言理论测试</h1>
+    </div>
+    <div id="student_info">
+        <table>
+            <tr>
+                <td>考试科目 :</td>
+                <td>统一建模语言</td>
+                <td>时间 :</td>
+                <td>100分钟</td>
+                <td>得分 :</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>班级 :</td>
+                <td><input type="text" placeholder="请输入班级" name="class"></td>
+                <td>学号 :</td>
+                <td><input type="text" placeholder="请输入学号" name="stu_num"></td>
+                <td>姓名 :</td>
+                <td><input type="text" placeholder="请输入姓名" name="stu_name"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="main">
+        <div id="fill_in_blank">
+            <h2>一、填空题（每空5分，共20分）</h2>
+            <ol>
+                <li>UML的中文全称是： <input type="text" placeholder="请输入答案" name="blank_1"></li>
+                <li>
+                    对象最突出的亮点是
+                    <input type="text" name="blank_2" placeholder="请输入答案">
+                    <input type="text" name="blank_3" placeholder="请输入答案">
+                    <input type="text" name="blank_4" placeholder="请输入答案">
+                </li>
+            </ol>
+        </div>
+        <div id="single_select">
+            <h2>二、选择题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    UML与软件工程的关系式:
+                    <ol style="list-style-type: upper-alpha">
+                        <li><input type="radio" name="single_1" value="1">UML就是软件工程</li>
+                        <li><input type="radio" name="single_1" value="2">UML参与到软件工程中软件开发过程的几个阶段</li>
+                        <li><input type="radio" name="single_1" value="3">UML与软件工程无关</li>
+                        <li><input type="radio" name="single_1" value="4">UML是软件工程的一部分</li>
+                    </ol>
+                </li>
+                <li>
+                    Java语言支持:
+                    <ol style="list-style-type: upper-alpha">
+                        <li><input type="radio" name="single_2" value="1">单继承</li>
+                        <li><input type="radio" name="single_2" value="2">多继承</li>
+                        <li><input type="radio" name="single_2" value="3">单继承和多继承都支持</li>
+                        <li><input type="radio" name="single_2" value="4">单继承和多继承都不支持</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div id="multiple_select">
+            <h2>三、多选题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    用例的粒度分为以下哪三种:
+                    <ol style="list-style-type: upper-alpha">
+                        <li><input type="checkbox" name="multiple_1" value="1">概述级</li>
+                        <li><input type="checkbox" name="multiple_1" value="2">需求级</li>
+                        <li><input type="checkbox" name="multiple_1" value="3">用户目标级</li>
+                        <li><input type="checkbox" name="multiple_1" value="4">子功能级</li>
+                    </ol>
+                </li>
+                <li>
+                    类图由以下哪三部分组成:
+                    <ol style="list-style-type: upper-alpha">
+                        <li><input type="checkbox" name="multiple_2" value="1">名称(Name)</li>
+                        <li><input type="checkbox" name="multiple_2" value="2">属性(Attribute)</li>
+                        <li><input type="checkbox" name="multiple_2" value="3">操作(Operation)</li>
+                        <li><input type="checkbox" name="multiple_2" value="4">方法(Function)</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <div id="judge">
+            <h2>四、判断题（每题10分，共20分）</h2>
+            <ol>
+                <li>
+                    用例图只是用于和客户交流和沟通，用于确定需求。
+                    <input type="radio" name="judge_1" value="0">√
+                    <input type="radio" name="judge_1" value="1">×
+                </li>
+                <li>
+                    在状态图中，终止状态在一个状态图中允许有人一多个。
+                    <input type="radio" name="judge_2" value="0">√
+                    <input type="radio" name="judge_2" value="1">×
+                </li>
+            </ol>
+        </div>
+        <div id="short_answer">
+            <h2>五、简答题（每题20分，共20分）</h2>
+            <ol>
+                <li>
+                    简述什么是模型以及模型的表现形式?
+                    <br>
+                    <textarea style="width: 500px;height: 150px">
+
+                </textarea>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div id="footer">
+        <input type="submit" value="计算分数">
+    </div>
+</form>
+</body>
+</html>
